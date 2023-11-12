@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "path/to/your/application/code",
+      "use": "@vercel/node"
+    }
+  ],
+  "version": 2,
+  "env": {
+    "PRISMA_GENERATE": "true"
+  },
+  "build": {
+    "env": {
+      "PRISMA_FORCE_NAPI": "true"
+    },
+    "commands": ["prisma generate", "your-build-command"]
+  }
+}
