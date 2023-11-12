@@ -1,0 +1,49 @@
+._add-task {
+  background-color: var(--color-secondary25);
+  width: 300px;
+  height: 190px;
+  border: 1px solid var(--color-secondary50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--color-primary80);
+  cursor: pointer;
+
+  .checkbox-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  &:hover {
+    // color: var(--color-primary95);
+  }
+  .title-input,
+  .desc-input {
+    width: 90%;
+    padding: 3px;
+    background-color: var(--color-secondary90);
+    color: var(--color-secondary0);
+    border-radius: 1px;
+  }
+  .date-input {
+    background-color: var(--color-secondary90);
+    color: var(--color-secondary0);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  label {
+    cursor: pointer;
+    background-color: var(--color-primary10);
+    padding: 1px 3px;
+    font-size: 0.9rem;
+  }
+  .active-box {
+    opacity: 1;
+  }
+  .not-active-box {
+    opacity: 0.3;
+  }
+}

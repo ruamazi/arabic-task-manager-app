@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary10: #33053cff;
+  --color-primary20: #4b1d52ff;
+  --color-primary25: #57295eff;
+  --color-primary30: #64346aff;
+  --color-primary40: #7e4c84ff;
+  --color-primary50: #99649eff;
+  --color-primary60: #b57db9ff;
+  --color-primary70: #d297d5ff;
+  --color-primary80: #efb2f2ff;
+  --color-primary90: #ffd6feff;
+  --color-primary95: #ffebfbff;
+  --color-primary99: #fffbffff;
+  --color-primary100: #ffffffff;
+  --color-secondary0: #000000ff;
+  --color-secondary10: #251626ff;
+  --color-secondary12: #291a2aff;
+  --color-secondary15: #302131ff;
+  --color-secondary20: #3b2b3cff;
+  --color-secondary25: #473647ff;
+  --color-secondary30: #534153ff;
+  --color-secondary35: #5f4d5fff;
+  --color-secondary40: #6b586bff;
+  --color-secondary50: #857184ff;
+  --color-secondary60: #a08a9eff;
+  --color-secondary70: #bba4b9ff;
+  --color-secondary80: #d7bfd5ff;
+  --color-secondary90: #f4dbf1ff;
+  --color-secondary95: #ffebfbff;
+  --color-secondary99: #fffbffff;
+
+  --transition-time-1: 0.25s ease-in-out;
+}
+body {
+  background-color: var(--color-secondary10);
+  color: var(--color-primary100);
+}
+
+.arFo {
+  /* font-family: "Noto Kufi Arabic", sans-serif; */
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+}
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 2.5rem;
+  gap: 2.2rem;
+}
+._hero {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-secondary15);
+  border: 1px solid var(--color-secondary35);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  ._title {
+    margin: 16px;
+    padding: 0 10px;
+    font-size: larger;
+    background: linear-gradient(to right, transparent, var(--color-primary20));
+  }
+
+  ._task-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+}

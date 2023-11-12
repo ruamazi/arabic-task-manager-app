@@ -1,0 +1,68 @@
+._single-task {
+  background-color: var(--color-secondary25);
+  width: 300px;
+  min-height: 190px;
+  // border: 1px solid var(--color-secondary50);
+  border-right: 3px solid var(--color-secondary50);
+  border-left: 3px solid var(--color-secondary50);
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top_section {
+    h1 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+  }
+  .btm_section {
+    ._bottom {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+
+      .icon_container {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        span {
+          cursor: pointer;
+          padding: 3px;
+          border-radius: 3px;
+          position: relative;
+
+          &:hover {
+            background-color: var(--color-secondary15);
+
+            &::after {
+              display: block;
+            }
+          }
+          &::after {
+            position: absolute;
+            font-size: 0.75rem;
+            top: -28px;
+            left: -5px;
+            display: none;
+            background-color: var(--color-secondary15);
+            color: var(--color-primary90);
+            padding: 3px 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .dicon::after {
+        content: "حذف";
+      }
+      .eicon::after {
+        content: "تعديل";
+      }
+    }
+  }
+}

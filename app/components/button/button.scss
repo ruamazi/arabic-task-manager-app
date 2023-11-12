@@ -1,0 +1,10 @@
+.button_container {
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: var(--color-primary40);
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
